@@ -10,11 +10,11 @@ class Program
         while (true)
         {
             float temperature = GetCPUTemperature();
-            Console.WriteLine("Mevcut CPU Sıcaklığı: " + temperature + "°C");
+            Console.WriteLine("Current Temperature: " + temperature + "°C");
 
-            if (temperature > 51)
+            if (temperature > 95)
             {
-                Console.WriteLine("sıcaklık kötü");
+                Console.WriteLine("It is bad");
                 PlayAlertSound();
             }
 
